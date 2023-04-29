@@ -44,6 +44,44 @@
     </header>
 
     
+    <container class="container">
+        
+        <form id="form">
+            <div> 
+
+                <h1>Cadastre-se para receber novidade</h1>
+
+                <div id="texto">
+                    <label for="nome">Nome</label>
+                    <input id="nome" type="text" name="nome" placeholder="Insira seu Nome" required>
+                </div>
+
+                <div id="texto">
+                    <label for="tel">Telefone</label>
+                    <input id="tel" type="tel" name="tel" placeholder="Insira seu numero de telefone" onclick (validarTel())>
+                    <span id="span">Insira um numero de telefone válido</span>
+                </div>
+
+                <div id="texto">
+                    <label for="email">E-mail</label>
+                    <input id="email" type="email" name="email" placeholder="Insira seu E-mail"onclick(validarEmail())>
+                    <span id="span">Insira um E-mail válido</span>
+                </div>
+ 
+            </div>
+            
+            <input type="submit" value="Enviar" id="botao" onclick="validarEmail()">
+
+        </form>
+        
+    </container>
+
+    <footer class="rodape">
+
+        <p id="direitos">@2023 - All Rights Reserved</p>
+        <a id="link__rodape" href="contato.html">Contato</a>
+
+    </footer>
     
 </body>
 </html>
